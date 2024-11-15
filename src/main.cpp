@@ -309,13 +309,13 @@ void opcontrol() {
 			right = -1 * controller_get_analog(CONTROLLER_MASTER, ANALOG_RIGHT_Y);
 			left = controller_get_analog(CONTROLLER_MASTER, ANALOG_LEFT_Y);	
 		} else {
-			// Left Stick Throttle
-			right = controller_get_analog(CONTROLLER_MASTER, ANALOG_RIGHT_X);
-			left = controller_get_analog(CONTROLLER_MASTER, ANALOG_RIGHT_X);
+			// Right Stick Throttle
+			right = controller_get_analog(CONTROLLER_MASTER, ANALOG_LEFT_Y);
+			left = controller_get_analog(CONTROLLER_MASTER, ANALOG_LEFT_Y);
 
 			// Right Stick Turn
-			right -= controller_get_analog(CONTROLLER_MASTER, ANALOG_LEFT_Y);
-			left += controller_get_analog(CONTROLLER_MASTER, ANALOG_LEFT_Y);
+			right -= controller_get_analog(CONTROLLER_MASTER, ANALOG_RIGHT_X);
+			left += controller_get_analog(CONTROLLER_MASTER, ANALOG_RIGHT_X);
 		}
 
 
