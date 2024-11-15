@@ -85,7 +85,7 @@ void opcontrol(void);
 #endif
 
 #if defined(TEAM_90095G)
-#define TANK_DRIVE true
+#define TANK_DRIVE false
 
 #define FRONT_LEFT_WHEELS_PORT 2
 #define FRONT_RIGHT_WHEELS_PORT 3
@@ -157,12 +157,12 @@ void opcontrol(void);
 #define RIGHT_X_DEADZONE 5
 #define RIGHT_Y_DEADZONE 5
 
-#define FR_CONSTANT 1
-#define FL_CONSTANT 1
-#define MR_CONSTANT 1
-#define ML_CONSTANT 1
-#define RR_CONSTANT 1
-#define RL_CONSTANT 1
+#define FR_CONSTANT -1
+#define FL_CONSTANT -1
+#define MR_CONSTANT -1
+#define ML_CONSTANT -1
+#define RR_CONSTANT -1
+#define RL_CONSTANT -1
 
 #define SLOWMODE_CONSTANT 0.5
 #define SLOWMODE_ENABLE true
